@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "More Accurate Titles For Alt-Left and Right",
+  "version": "0",
+  "description":"This plugin changes \"alt-right\" to \"neo-nazis\" and \"alt-left\" to \"neo-nazis that believe in climate change and smoke weed\"",
+  "icons": {"128":"icon.png"},
+  "browser_action":{"default_icon":"icon.png"},
+  "content_scripts":[
+    {
+      "matches":["*://*/*"],
+      "js":["script.js"],
+      "run_at":"document_idle"
+    }
+  ]
+}
